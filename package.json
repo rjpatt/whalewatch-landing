@@ -1,6 +1,6 @@
 {
   "name": "whalewatchlanding",
-  "homepage": "http://rjpatt.github.io/whalewatch-landing",
+  "homepage": "https://whalewatchapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -56,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
