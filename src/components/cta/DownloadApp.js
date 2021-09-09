@@ -10,7 +10,7 @@ import appleIconImageSrc from "images/apple-icon.png";
 // import googlePlayIconImageSrc from "images/google-play-icon.png"
 import windowsIcon from "images/windows-icon.png"
 import linuxIcon from "images/linux-icon.png"
-import githubIcon from "images/github-icon.png"
+import githubIcon from "images/github-icon.svg"
 
 const Container = tw(ContainerBase)`bg-gray-900 -mx-8`
 const Content = tw(ContentWithPaddingXl)``
