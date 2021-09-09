@@ -42,7 +42,7 @@ export default () => {
             <Link href="#feature-section">Features</Link>
             <Link href="#demo">Demo</Link>
             <Link href="#our-team">Our Team</Link>
-            <Link href="#download">Download</Link>
+            <Link href="#download">Get Started</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://github.com/oslabs-beta/whalewatch">
