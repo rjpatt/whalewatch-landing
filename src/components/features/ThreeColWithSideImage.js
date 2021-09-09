@@ -74,7 +74,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     { imageSrc: ReliableIconImage, title: "Live", description: "Get your insights just when you need them - now." },
     {
       imageSrc: SimpleIconImage, title: "Easy",
-      description: "Minimal configuration needed. Simply follow a few simple steps and start monitoring."
+      description: "Minimal configuration needed. Follow a few simple steps and start monitoring."
     }
   ];
 
