@@ -60,8 +60,8 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: "Download",
-      description: "Download the app for your system below."
+      heading: "Fork and clone",
+      description: "Follow the link below and fork and clone our repo."
     },
     {
       heading: "Start Docker",
@@ -69,7 +69,7 @@ export default ({
     },
     {
       heading: "Run",
-      description: "Launch the app, sign up for an account, and start monitoring."
+      description: "Follow a few simple steps to run the app."
     }
   ];
 

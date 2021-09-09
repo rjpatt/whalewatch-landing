@@ -38,8 +38,8 @@ const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-l
 const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-gray-800 opacity-50`
 const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-gray-800 opacity-50`
 export default ({
-  subheading = "Download App",
-  text = "Download our lightweight Docker monitoring tool.",
+  subheading = "Get Started",
+  text = "Get started with our lightweight Docker monitoring tool.",
   link1Text = "Windows",
   link1Url = "#",
   link1IconSrc = windowsIcon,

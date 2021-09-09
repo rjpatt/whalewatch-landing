@@ -78,7 +78,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavLink href="/#" tw="lg:ml-12!">
 
       </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="#download">Download</PrimaryLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="https://github.com/oslabs-beta/whalewatch">Get Started</PrimaryLink>
     </NavLinks>
   ];
 
