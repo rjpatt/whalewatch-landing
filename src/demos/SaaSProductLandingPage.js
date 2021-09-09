@@ -7,13 +7,16 @@ import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
-import Pricing from "components/pricing/ThreePlans.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
-import FAQ from "components/faqs/SingleCol.js";
-import GetStarted from "components/cta/GetStarted";
-import Footer from "components/footers/FiveColumnWithBackground.js";
-import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
-import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
+// import Pricing from "components/pricing/ThreePlans.js";
+// import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
+// import FAQ from "components/faqs/SingleCol.js";
+// import GetStarted from "components/cta/GetStarted";
+import DownloadApp from "components/cta/DownloadApp";
+import ProfileThreeColGrid from "components/cards/ProfileThreeColGrid";
+import Footer from "components/footers/MiniCenteredFooter";
+// import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
+import ContainersGifSrc from "images/containers.gif";
+// import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -23,42 +26,62 @@ export default () => {
   const HighlightedText = tw.span`text-primary-500`;
 
   return (
-    <AnimationRevealPage>
+    <AnimationRevealPage disabled>
       <Hero roundedHeaderButton={true} />
+      <a id="feature-section"></a>
       <Features
         subheading={<Subheading>Features</Subheading>}
         heading={
           <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
+            What our app does <HighlightedText>differently</HighlightedText>
           </>
         }
       />
-      <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
-        imageSrc={heroScreenshotImageSrc}
-        imageBorder={true}
-        imageDecoratorBlob={true}
-      />
+      <a id="demo"></a>
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>Steps</Subheading>}
         heading={
           <>
             Easy to <HighlightedText>Get Started.</HighlightedText>
           </>
         }
         textOnLeft={false}
-        imageSrc={macHeroScreenshotImageSrc}
+
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
-      <MainFeature2
-        subheading={<Subheading>VALUES</Subheading>}
+      <MainFeature
+        subheading={<Subheading>Dashboard</Subheading>}
         heading={
           <>
-            We Always Abide by Our <HighlightedText>Principles.</HighlightedText>
+            Get Insights <HighlightedText>Quickly.</HighlightedText>
           </>
         }
-        imageSrc={prototypeIllustrationImageSrc}
+        imageBorder={true}
+        imageDecoratorBlob={false}
+      />
+      {/* <MainFeature
+        subheading={<Subheading>Containers</Subheading>}
+        heading={
+          <>
+            Manage Your Containers with <HighlightedText>Ease.</HighlightedText>
+          </>
+        }
+        imageSrc={heroScreenshotImageSrc}
+        imageBorder={true}
+        imageDecoratorBlob={true}
+      /> */}
+
+
+      <MainFeature2
+        subheading={<Subheading>Containers</Subheading>}
+        heading={
+          <>
+            Manage Your Containers with <HighlightedText>Ease.</HighlightedText>
+          </>
+        }
+        imageSrc={ContainersGifSrc}
+        textOnLeft={false}
         showDecoratorBlob={false}
         features={[
           {
@@ -75,7 +98,7 @@ export default () => {
           }
         ]}
       />
-      <Pricing
+      {/* <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>
@@ -106,8 +129,8 @@ export default () => {
             features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
           }
         ]}
-      />
-      <Testimonial
+      /> */}
+      {/* <Testimonial
         subheading={<Subheading>Testimonials</Subheading>}
         heading={
           <>
@@ -136,8 +159,8 @@ export default () => {
             customerTitle: "Founder, EventsNYC"
           }
         ]}
-      />
-      <FAQ
+      /> */}
+      {/* <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={
           <>
@@ -176,8 +199,14 @@ export default () => {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           }
         ]}
-      />
-      <GetStarted/>
+      /> */}
+      {/* <GetStarted /> */}
+      <a id="download"></a>
+
+      <DownloadApp />
+      <a id="our-team"></a>
+
+      <ProfileThreeColGrid />
       <Footer />
     </AnimationRevealPage>
   );

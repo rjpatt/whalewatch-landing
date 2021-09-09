@@ -3,7 +3,8 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+// import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import SignUpScreenShotSrc from "images/whalewatch-mockup.png"
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
@@ -46,7 +47,7 @@ export default ({
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
     </>
   ),
-  imageSrc = TeamIllustrationSrc,
+  imageSrc = SignUpScreenShotSrc,
   imageRounded = true,
   imageBorder = false,
   imageShadow = false,
@@ -59,16 +60,16 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: "Register",
-      description: "Create an account with us using Google or Facebook."
+      heading: "Download",
+      description: "Download the app for your system below."
     },
     {
-      heading: "Download",
-      description: "Browse and Download the template that you like from the marketplace."
+      heading: "Start Docker",
+      description: "Make sure the Docker Daemon is running on your machine."
     },
     {
       heading: "Run",
-      description: "Follow the instructions to setup and customize the template to your needs."
+      description: "Launch the app, sign up for an account, and start monitoring."
     }
   ];
 
@@ -88,7 +89,7 @@ export default ({
             <Steps>
               {steps.map((step, index) => (
                 <Step key={index}>
-                  <StepNumber>{(index+1).toString().padStart(2,'0')}</StepNumber>
+                  <StepNumber>{(index + 1).toString().padStart(2, '0')}</StepNumber>
                   <StepText>
                     <StepHeading>{step.heading}</StepHeading>
                     <StepDescription>{step.description}</StepDescription>

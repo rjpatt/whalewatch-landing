@@ -1,11 +1,10 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import {Container as ContainerBase } from "components/misc/Layouts.js"
-import logo from "../../images/logo.svg";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { Container as ContainerBase } from "components/misc/Layouts.js"
+import logo from "../../images/logoNoText.png";
+import { ReactComponent as LinkedInIcon } from "../../images/linkedin-icon.svg";
+import { ReactComponent as GithubIcon } from "../../images/github-icon.svg";
 
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
@@ -36,28 +35,26 @@ export default () => {
         <Row>
           <LogoContainer>
             <LogoImg src={logo} />
-            <LogoText>Treact</LogoText>
+            <LogoText>WhaleWatch</LogoText>
           </LogoContainer>
           <LinksContainer>
             <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="#feature-section">Features</Link>
+            <Link href="#demo">Demo</Link>
+            <Link href="#our-team">Our Team</Link>
+            <Link href="#download">Download</Link>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
+            <SocialLink href="https://github.com/oslabs-beta/whalewatch">
+              <GithubIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink href="https://www.linkedin.com/company/whalewatchapp">
+              <LinkedInIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
-            </SocialLink>
+
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, Treact Inc. All Rights Reserved.
+            <a href="https://opensourcelabs.io/">Accelerated by OS Labs, a non-profit supporting open-source projects</a>
           </CopyrightText>
         </Row>
       </Content>

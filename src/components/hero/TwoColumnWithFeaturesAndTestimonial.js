@@ -37,12 +37,12 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 
 
 export default ({
-  heading = "Better, Faster and Cheaper Cloud.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  heading = "Lightweight monitoring for Docker containers.",
+  description = "Our dashboard shows you all the metrics you need for all containers on your computer.",
   imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
   imageDecoratorBlob = true,
-  primaryButtonUrl = "https://google.com",
-  primaryButtonText = "Get Started",
+  primaryButtonUrl = "#",
+  primaryButtonText = "Download",
   buttonRounded = true,
   features = ["Available in 7 Locations", "Premium Internet Backbone", "99.99% Uptime SLA"],
   testimonial = {
@@ -95,7 +95,7 @@ export default ({
                 <Image src={imageSrc} />
                 {imageDecoratorBlob && <ImageDecoratorBlob />}
                 <Testimonial>
-                  <QuotesLeftIcon/>
+                  <QuotesLeftIcon />
                   <Quote>{testimonial.quote}</Quote>
                   <CustomerName>{testimonial.customerName}</CustomerName>
                   <CustomerCompany>{testimonial.customerCompany}</CustomerCompany>

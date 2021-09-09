@@ -17,15 +17,16 @@ module.exports = {
       white: '#fff',
 
       primary: {
-        100: '#a273ff',
-        200: '#935bff',
-        300: '#8344ff',
-        400: '#742cff',
-        500: '#6415FF',
-        600: '#5a13e6',
-        700: '#5011cc',
-        800: '#460fb3',
-        900: '#3c0d99',
+        100: '#29aadb',
+        200: '#2fb9ed',
+
+        300: '#bbe5ea',
+        400: '#8ec1de',
+        500: '#049dd8',
+        600: '#069dd8',
+        700: '#3a9cbf',
+        800: '#006dd0',
+        900: '#3398bc',
       },
 
       secondary: {
@@ -209,8 +210,8 @@ module.exports = {
       "2xl": '1rem',
       "3xl": '1.5rem',
       "4xl": '2.5rem',
-      "5xl":'3rem',
-      "6xl":'4.5rem',
+      "5xl": '3rem',
+      "6xl": '4.5rem',
       full: '9999px',
     },
     borderWidth: {
@@ -263,8 +264,9 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      display: ['Inter', 'system-ui'],
+      display: ['Nunito Sans', 'system-ui'],
       sans: [
+        'Nunito Sans',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
