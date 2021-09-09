@@ -10,6 +10,7 @@ import appleIconImageSrc from "images/apple-icon.png";
 // import googlePlayIconImageSrc from "images/google-play-icon.png"
 import windowsIcon from "images/windows-icon.png"
 import linuxIcon from "images/linux-icon.png"
+import githubIcon from "images/github-icon.png"
 
 const Container = tw(ContainerBase)`bg-gray-900 -mx-8`
 const Content = tw(ContentWithPaddingXl)``
@@ -48,6 +49,9 @@ export default ({
   link3Text = "Linux",
   link3Url = "#",
   link3IconSrc = linuxIcon,
+  link4Text = "GitHub",
+  link4Url = "https://github.com/oslabs-beta/whalewatch",
+  link4IconSrc = githubIcon,
   pushDownFooter = false,
   imageSrc = mockupImageSrc,
 }) => {
@@ -59,17 +63,21 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Text>{text}</Text>
             <LinksContainer>
-              <Link href={link1Url}>
+              {/* <Link href={link1Url}>
                 <img src={link1IconSrc} alt="" />
                 <span>{link1Text}</span>
-              </Link>
-              <Link href={link2Url}>
+              </Link> */}
+              {/* <Link href={link2Url}>
                 <img src={link2IconSrc} alt="" />
                 <span>{link2Text}</span>
               </Link>
               <Link href={link3Url}>
                 <img src={link3IconSrc} alt="" />
                 <span>{link3Text}</span>
+              </Link> */}
+              <Link href={link4Url}>
+                <img src={link4IconSrc} alt="" />
+                <span>{link4Text}</span>
               </Link>
             </LinksContainer>
           </TextContainer>
