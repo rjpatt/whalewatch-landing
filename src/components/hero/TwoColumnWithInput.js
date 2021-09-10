@@ -61,7 +61,7 @@ export default ({ roundedHeaderButton }) => {
             <Paragraph>
               Keep track of the metrics you care about in an easy-to-use, lightweight GUI.
             </Paragraph>
-            <PrimaryButton as="a" href={'/#'} css={buttonRoundedCss}>Download</PrimaryButton>
+            <PrimaryButton as="a" href={'https://github.com/oslabs-beta/whalewatch'} css={buttonRoundedCss}>Download</PrimaryButton>
 
           </LeftColumn>
           <RightColumn>
